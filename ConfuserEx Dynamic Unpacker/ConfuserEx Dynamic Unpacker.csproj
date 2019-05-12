@@ -58,11 +58,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include=".\..\de4dot\de4dot.blocks\de4dot.blocks.csproj">
+    <ProjectReference Include="..\de4dot\de4dot.blocks\de4dot.blocks.csproj">
       <Project>{045b96f2-af80-4c4c-8d27-e38635ac705e}</Project>
       <Name>de4dot.blocks</Name>
     </ProjectReference>
-    <ProjectReference Include=".\..\dnlib\src\dnlib.csproj">
+    <ProjectReference Include="..\dnlib\src\dnlib.csproj">
       <Project>{fdfc1237-143f-4919-8318-4926901f4639}</Project>
       <Name>dnlib</Name>
     </ProjectReference>

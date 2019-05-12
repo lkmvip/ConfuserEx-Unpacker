@@ -16,10 +16,10 @@ namespace ConfuserEx_Dynamic_Unpacker.Protections
         {
             
             // Thanks to 0xd4d https://github.com/0xd4d/dnlib/issues/72
-            for (uint rid = 1; rid <= module.Metadata.TablesStream.FileTable.Rows; rid++)
+            for (uint rid = 1; rid <= module.MetaData.TablesStream.FileTable.Rows; rid++)
             {
                 dnlib.DotNet.MD.RawFileRow row = new dnlib.DotNet.MD.RawFileRow(); 
-                module.TablesStream.TryReadFileRow(rid, out row);
+                row =module.TablesStream.ReadFileRow(rid);
                 string name = module.StringsStream.ReadNoNull(row.Name);
                 if (name!="koi") continue;
                 
